@@ -1,0 +1,106 @@
+.loca_1{
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+}
+.loca_2{
+    height:40px;
+    width:1520px;
+}
+
+.loca_3{
+    width:1520px;
+    display:-webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.loca_3_1 {
+    width: 300px;
+}
+.loca_3_2{
+    width: 1220px;
+    background: #f9f9f9;
+}
+.All_height{
+    height:690px;
+}
+.chatArea{
+    display:-webkit-box;
+    -webkit-box-orient: horizontal;
+}
+.chat{
+    width:920px;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+}
+.Key_list{
+    width:300px;
+}
+.scro{
+    overflow-y: auto;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    border: solid #afd9ee;
+}
+.title{
+    height:30px;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.information{
+    height:520px;
+    overflow-y: auto;
+}
+.write{
+    height: 140px;
+}
+
+.messageMain {
+    width: 900px;
+    height: auto;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+.messageContent {
+    height: auto;
+    width: auto;
+}
+
+.login_information1{
+    margin-left: 10px;
+    float: left;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.news_my{
+    width: auto;
+    height: auto;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    padding:5px 10px;
+    margin: 4px;
+    line-height: auto;
+    outline-width: 435px;
+    font-size: 14px;
+    border-radius:10px;
+    margin-left: 10px;
+    position: relative;
+    float: left;
+}
+.nameLL{
+    margin-left:20px;
+}
+
+.news_others{
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    padding:5px 10px;
+    margin: 4px;
+    line-height: auto;
+    outline-width: 435px;
+    font-size: 14px;
+    border-radius:10px;
+    margin-left: 10px;
+    position: relative;
+    float: right;
+    width: auto;
+    height: auto;
+}
+.question{
+
+}

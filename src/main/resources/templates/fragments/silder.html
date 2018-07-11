@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div th:fragment="silder" class="d-sm-block bg-light sidebar"  >
+    <div class="scro All_height"  id="Que_list">
+        <tr>
+            <div class="title">问题列表:</div>
+        </tr>
+        <tr th:each="que:${questionList}" id="questionForm">
+            <a th:id="${que.getQuestionid()}"  th:text="${que.getQuestionkeyword()}" class="nav-item active nav-link question" > </a>
+        </tr>
+    </div>
+</div>
+</body>
+</html>

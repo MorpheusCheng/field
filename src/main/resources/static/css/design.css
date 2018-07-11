@@ -1,0 +1,123 @@
+/* CSS Document */
+
+
+.qqbox {
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+}
+
+.Header {
+	width:100%;
+	height: 30px;
+}
+
+.content_2{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	width:100%;
+	height:480px;
+}
+.content {
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+.LeftList {
+	width: 300px;
+	height:750px;
+	overflow: auto;
+	background: #fafafa;
+}
+
+.uilileft {
+	width:30%;
+	height: 30px;
+}
+
+.top {
+	margin-top:40px;
+}
+
+.font_size {
+	font-size: 20px;
+}
+
+.RightContent {
+	margin-top: 30px;
+    width: 100%;
+	-webkit-box-flex: 1;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	
+}
+.increase_top2{
+	margin-top: 20px;
+
+}
+.inputBox {
+	width: 100%;
+	height:250px;
+	border-top: 1px solid #ADADAD;
+}
+
+.rightfoot {
+	width: 70%;
+	height: 380px;
+	border-top: 1px solid #ccc;
+	position: relative;
+	margin-top: 619px;
+}
+
+.text_input {
+	width:83%;
+	height:480px;
+}
+.user_list{
+	border:1px solid black;
+	width:200px;
+	height:450px;
+
+}
+.outer {
+	overflow-y: scroll;
+}
+
+.button_position {
+	position: relative;
+	margin-left: 1150px;
+}
+.login_information{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+.increase_top{
+	margin-top:20px;
+}
+.news_others{
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+	padding:0px 10px;
+	margin: 4px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius:10px;
+	margin-left: 10px;
+	position: relative;
+	float: right;
+	width: auto;
+	height: 40px;
+}
+.news_my{
+	width: auto;
+	height: 40px;
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+	padding:0px 10px;
+	margin: 4px;
+	line-height: 40px;
+	font-size: 14px;
+	border-radius:10px;
+	margin-left: 10px;
+	position: relative;
+	float: left;
+}

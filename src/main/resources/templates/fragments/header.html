@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <div th:fragment="resources">
+        <meta charset="UTF-8">
+        <meta name="_csrf" th:content="${_csrf.token}"/>
+        <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+        <title id="title" sec:authentication="name"></title>
+        <link rel="stylesheet" th:href="@{css/design.css}">
+        <link rel="stylesheet" th:href="@{css/header.css}">
+        <link rel="stylesheet" th:href="@{css/talk_des.css}">
+    </div>
+</head>
+<body>
+<div th:fragment="header">
+    <nav class="nav_1 nav nav-tabs">
+        <li class="nav_word"><a style="color: #ffffff;" href="/talk">Field</a></li>
+        <li class="nav_word2" style="cursor: pointer;"><a href="/resource">Resource</a></li>
+        <li class="nav_word3" id="ask" style="cursor: pointer;"><a style="color: #ffffff;" href="/ask">提问</a></li>
+        <li class="nav_word4" id="myown" style="cursor: pointer;"><a style="color: #ffffff;" href="/personCenter"><strong><span  sec:authentication="name"></span></strong>个人中心</a></li>
+    </nav>
+</div>
+</body>
+</html>

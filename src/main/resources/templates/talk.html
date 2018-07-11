@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.com"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8">
+    <div th:replace="fragments/header :: resources"></div>
+    <link rel="stylesheet" th:href="@{css/bootstrap/bootstrap4/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/talk.js}"></script>
+</head>
+<body>
+<div class="loca_1">
+    <div class="loca_2">
+        <div th:replace="fragments/header :: header"></div>
+    </div>
+    <div class="loca_3">
+        <div class="loca_3_1 All_height">
+            <div th:replace="fragments/silder :: silder"></div>
+        </div>
+        <div class="loca_3_2 chatArea">
+            <div class="All_height chat" >
+                <div class="title" id="title_show"></div>
+                    <div class="information" id="msg">
+
+                </div>
+                <div class="write">
+                    <textarea id="textWord" style="height: 100px;" class=" text form-control"
+                              placeholder="按Ctrl和Enter键发送"></textarea>
+                    <button class="btn btn-info" id="send">发送</button>
+                </div>
+            </div>
+            <div class="All_height Key_list scro">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+    <title>ajax</title>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{css/bootstrap/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{css/ajaxcss.css}">
+    <link rel="stylesheet" th:href="@{css/user.css}">
+   <!-- <script type="text/javascript"  src="webjars/jquery/2.2.4/jquery.min.js"></script>-->
+    <link th:href="@{jquery-ui-1.12.1.custom/jquery-ui.css}" rel="stylesheet">
+    <script th:src="@{jquery-ui-1.12.1.custom/external/jquery/jquery.js}"></script>
+    <script th:src="@{jquery-ui-1.12.1.custom/jquery-ui.js}"></script>
+    <script th:src="@{js/jquery.validate.js}"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand " style="font-size:50px" href="#">Field</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container" style="min-height:500px">
+    <div >
+    <h3>请输入信息完成注册:</h3>
+
+        <form class="form-horizontal" id="search-form" th:method="post">
+            <!--form-group获取最佳的间距所需-->
+
+            <div id="feedback"></div>
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label display-4">你的职业：</label>
+                <div class="col-sm-6">
+                    <select class="position-location" id="select">
+                        <option value="ROLE_student">学生</option>
+                        <option value="ROLE_teacher">老师</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label display-4">用户名：</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control required" minlength="2" id="username"/>
+                </div>
+            </div>
+
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label display-4">密码：</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control required" id="password"/>
+                </div>
+            </div>
+
+            <div class="form-group form-group-lg">
+                <label class="col-sm-2 control-label display-4">邮箱：</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control required email" id="email"/>
+                </div>
+            </div>
+
+            <div clsss="form-group form-group-lg">
+                <label class="col-sm-2 control-label verification">拖拽验证：</label>
+                <div class="col-sm-6 login-box">
+                    <!--   <input type="text" class="form-control" id="verification"/>-->
+                    <label class="form-inline">
+                        <!--<div class="form-inline-font">
+                            Verification :
+                        </div>-->
+                        <div class="form-inline-input">
+                            <div class="code-box" id="code-box">
+                                <input type="text" name="code" class="code-input" />
+                                <p></p>
+                                <span>>>></span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" id="bth-search"
+                            class="btn btn-primary btn-lg" style="margin-top: 50px">注册
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="validate">
+    <p>请输入您邮箱中的验证码:</p>
+    <form>
+        <input type="text" id="validation">
+    </form>
+</div>
+<script type="text/javascript"  src="js/signup.js"></script>
+<script  type="text/javascript" src="js/verification.js"></script>
+</body>
+</html>

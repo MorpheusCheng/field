@@ -1,0 +1,13 @@
+.relative{
+	position:relative;
+}
+
+.local_center {
+	
+}
+
+.page_footing {
+    width:100%;
+	float:left;
+	margin-bottom: 100px;
+}

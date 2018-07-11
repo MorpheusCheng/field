@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <div th:replace="fragments/header :: resources"></div>
+    <link rel="stylesheet" th:href="@{css/ask.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap/bootstrap4/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{js/jquery-3.3.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/ask.js}"></script>
+
+    <!--  <meta name="_csrf" th:content="${_csrf.token}"/>
+      <meta name="_csrf_header" th:content="${_csrf.headerName}"/>-->
+</head>
+<body>
+<div class="loca_1">
+    <div class="loca_2">
+        <div th:replace="fragments/header :: header"></div>
+    </div>
+    <div class="loca_3">
+        <div class="loca_3_1 All_height">
+            <div th:replace="fragments/silder :: silder"></div>
+        </div>
+        <div class="loca_3_2 All_height">
+            <div style="padding: 100px 100px 10px;">
+                <form class="bs-example bs-example-form" role="form">
+                    <label style="size: 20px;">根据提示输入你的问题：</label>
+                    <div class="input-group ask_1">
+                        <span class="input-group-addon">请输入关键字：</span>
+                        <input id="que_Key" type="text" class="form-control">
+                    </div>
+                    <br>
+                    <div class="input-group ask_2">
+                        <span class="input-group-addon">输入你的问题：</span>
+                        <textarea type="are" class="form-control" id="que_Area"></textarea>
+                    </div>
+                    <br>
+                    <button class="btn btn-info btn-lg ask_3" id="QueButton">提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

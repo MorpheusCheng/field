@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+
+	<title>lxd</title>
+	<link rel="stylesheet" th:href="@{css/bootstrap.css}">
+	<link rel="stylesheet" th:href="@{css/style.css}">
+	<link rel="stylesheet" th:href="@{css/position.css}">
+	<script th:src="@{js/jquery-3.3.1.min.js}"></script>
+	<script th:src="@{js/login.js}"></script>
+	<link th:href="@{jquery-ui-1.12.1.custom/jquery-ui.css}" rel="stylesheet">
+	<script th:src="@{jquery-ui-1.12.1.custom/external/jquery/jquery.js}"></script>
+	<script th:src="@{jquery-ui-1.12.1.custom/jquery-ui.js}"></script>
+	<script th:src="@{js/signup.js}"></script>
+</head>
+<body>
+<section class="probootstrap-cover relative"   style="background-image: url(images/P71030-225627.jpg)" data-stellar-background-ratio="0.5" id="section-home">
+	<p th:class="text-center"  th:if="${param.logout}">注销成功</p>
+	<p th:class="text-center"  th:if="${param.error}">有错误，请重试</p>
+	<div class="overlay"></div>
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="display-4 color_field" href="#">Field</a>
+			</div>
+			<ul class="nav navbar-nav ml-auto">
+				<li>
+					<input   type="button" value="登陆" class="btn btn-default change_color nav-" id="login" >
+
+					<input type="button" value="注册" class="btn btn-default register change_color nav-item" id="signup">
+				</li>
+			</ul>
+		</div>
+		<!--为了向导航栏添加链接必须包含nav navbar-nav-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-md-5">
+				<h1 class="font-light">Explore Your World With Field</h1>
+				<p class="lead mb-5 ">
+					<a href="onepage.html" role="button" class="col-md-5  btn btn-primary text-uppercase p-3 mb-3 ">see the Field</a>
+				</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+<section id="section-feature-testimonial" >
+	<div class="container">
+		<h2 class="display-4 text-center col-md-12 border-bottom">Choose Field</h2>
+		<div class="line"></div>
+		<hr/>
+		<blockquote>
+			<p class="lead mb-4 local_center justify-content-center">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;随着信息的爆发式增长，知识交互的多样性也体现了出来，为了更全面地有目的地学习，并把所学及时运用到实践之中，我们更应该在课下去进行深入思考和研究，发现问题并解决问题。另一方面，大学的教学模式使得学生在课余很难与老师取得联系，并且大量的课余提问很可能对老师的日常生活造成干扰，而使用我们的产品，你可以很好的在线上进行提问，并解决问题。
+			</p>
+		</blockquote>
+	</div>
+
+
+	<div>
+		<p style="display: inline" class="author1 ">
+			<img src="images/2.jpg" alt="创始人" class="rounded-circle img-position">
+
+		</p>
+		<p style="display: inline" class="author2">
+			<img src="images/2.jpg" alt="创始人" class="rounded-circle img-position">
+		</p>
+		<p style="display: inline" class="author3 author3_right">
+			<img src="images/2.jpg" alt="创始人" class="rounded-circle img-position">
+		</p>
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<div>
+		<p class="img-position">
+			<span class="author_name">&nbsp;&nbsp;刘旭东</span><br/>
+			<span class="author_title">15130140362</span></p>
+
+		<p class="img-position2">
+			<span class="author_name">&nbsp;&nbsp;刘旭东</span><br/>
+			<span class="author_title">15130140362</span></p>
+
+		<p class="img-position3">
+			<span class="author_name">&nbsp;&nbsp;刘旭东</span><br/>
+			<span class="author_title">15130140362</span></p>
+
+	</div>
+	</div>
+</section>
+
+<section class="probootstrap_section">
+	<div class="container">
+
+		<h2 class="display-4 text-center" style="margin: 40px ">The Company We Choose</h2>
+		<div class="line1"></div>
+		<hr/>
+		<div calss="row" style="white-space: nowrap">
+			<div  class="col-lg-3 probootstrap-thumbnail">
+				<img src="images/tt.jpg" class="img-fluid">
+				<h3 class="probootstrap_text">&nbsp;&nbsp;&nbsp;头条</h3>
+			</div>
+			<div  class="col-lg-3 probootstrap-thumbnail">
+				<img src="images/bd.png" class="img-fluid">
+				<h3 class="probootstrap_text">&nbsp;&nbsp;&nbsp;&nbsp;百度</h3>
+			</div>
+			<div  class="col-lg-3 probootstrap-thumbnail">
+				<img src="images/tx.jpg" class="img-fluid">
+				<h3 class="probootstrap_text">&nbsp;&nbsp;&nbsp;&nbsp;腾讯</h3>
+			</div>
+			<div  class="col-lg-3 probootstrap-thumbnail">
+				<img src="images/al.png" class="img-fluid">
+				<h3 class="probootstrap_text">&nbsp;&nbsp;&nbsp;&nbsp;阿里</h3>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<section class="probootstrap_section_1">
+	<hr/>
+	<br/>
+	<br/>
+	<h2 class="display-4 text-center">Our Service</h2>
+	<div>
+		<div class="probotstrap-imge" style="background-image:url(images/discuss.jpg);display:inline;background-repeat: no-repeat"></div>
+		<h2 class="text-center heading">Customer Service</h2>
+		<div class="Customer_Service_pos">
+			<p class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;在课下为所有的同学提供一个解决问题的平台, 让同学们可以将更多的时间用来在课下去解决问题，这样有利于将课堂上单调的知识
+			转化到实际的实践中来。</p>
+			<p class="text-center">我们这里更有不同专业的老师为您的问题进行解答，确保您的问题是可以解决。</p>
+			<p class="text-center">快来加入吧!</p>
+			<p class="text-center"><a href="#" class="btn btn-primary">Learn More</a></p>
+		</div>
+	</div>
+
+</section>
+<div class="row pt-5 page_footing">
+	<div class="page_center">
+		<p class="text-center">
+			&copy;2018,All Right Reserved<br/>Designed by <span style="color:#14ED11">lxd</span>
+		</p>
+	</div>
+</div>
+
+<div id="dialog-form" title="登陆">
+	<p class="validateTips small">请输入用户名和密码</p>
+	<form id="login_form" th:action="@{/login}" th:method="POST">
+		<fieldset>
+			<label for="username">姓名:</label>
+			<input type="text" name="username" id="username" class="text ui-widget-content ui-corner-all" placeholder="请输入邮箱登陆">
+			<label for="password">密码:</label>
+			<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all" placeholder="输入密码">
+			<span class="small ml-auto"><a href="forget_password" class="change_color">忘记密码？</a></span>
+			<input style="margin-left: 60px" type="checkbox" id="remember_me"><span class="small change_color">10天之内免登陆</span>
+		</fieldset>
+	</form>
+</div>
+
+</body>
+</html>
