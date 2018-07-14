@@ -1,7 +1,7 @@
 # webBigWork  网上在线课堂
 ### 项目开发环境:
  * "jdk "1.8.0_161"
- * IntelliJ IDEA-2017.1.1
+ * IntelliJ IDEA-2018.1.1
  * SpringBoot-2.0.0
  * jQuery-3.3.1
  * Bootstrap-3.3.7.dist
